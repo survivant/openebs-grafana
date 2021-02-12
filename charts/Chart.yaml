@@ -1,0 +1,17 @@
+apiVersion: v2
+appVersion: "1.0"
+name: monitoring-stack
+version: 0.0.1
+description: A Helm chart for Monitoring stack
+maintainers:
+#home: https://bitbucket.comact.com/im/kubernetes-api.git
+icon: http://interne.comact.com/bid-interne.png
+#sources:
+#  - https://bitbucket.comact.com/im/kubernetes-api.git
+dependencies:
+  - name: kube-prometheus-stack
+    version: 13.7.0
+    repository: "@prometheus-community"
+  - name: prometheus
+    version: 13.3.1
+    repository: "@prometheus-community"
