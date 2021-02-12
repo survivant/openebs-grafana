@@ -2,7 +2,7 @@
 	"dashboard": {
 		"__inputs": [
 			{
-				"name": "Prometheus",
+				"name": "DS_OPENEBS_PROMETHEUS",
 				"label": "openebs Prometheus",
 				"description": "",
 				"type": "datasource",
@@ -61,7 +61,7 @@
 						"value": "total"
 					}
 				],
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fontSize": "100%",
 				"gridPos": {
 					"h": 8,
@@ -133,7 +133,7 @@
 						"value": "total"
 					}
 				],
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fontSize": "100%",
 				"gridPos": {
 					"h": 8,
@@ -204,7 +204,7 @@
 						"value": "current"
 					}
 				],
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fontSize": "100%",
 				"gridPos": {
 					"h": 7,
@@ -280,7 +280,7 @@
 					"allValue": null,
 					"current": {
 					},
-					"datasource": "Prometheus",
+					"datasource": "DS_OPENEBS_PROMETHEUS",
 					"hide": 0,
 					"includeAll": false,
 					"label": "Cluster",
@@ -303,7 +303,7 @@
 					"allValue": null,
 					"current": {
 					},
-					"datasource": "Prometheus",
+					"datasource": "DS_OPENEBS_PROMETHEUS",
 					"hide": 2,
 					"includeAll": true,
 					"label": "Volume",
@@ -326,7 +326,7 @@
 					"allValue": null,
 					"current": {
 					},
-					"datasource": "Prometheus",
+					"datasource": "DS_OPENEBS_PROMETHEUS",
 					"hide": 0,
 					"includeAll": true,
 					"label": "Openebs pvc",

@@ -61,7 +61,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "DS_OPENEBS_PROMETHEUS",
       "fill": 3,
       "gridPos": {
         "h": 6,
@@ -179,7 +179,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "DS_OPENEBS_PROMETHEUS",
       "fill": 3,
       "gridPos": {
         "h": 6,
@@ -267,7 +267,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "DS_OPENEBS_PROMETHEUS",
       "fill": 3,
       "gridPos": {
         "h": 6,
@@ -355,7 +355,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "DS_OPENEBS_PROMETHEUS",
       "fill": 3,
       "gridPos": {
         "h": 6,
@@ -443,7 +443,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "DS_OPENEBS_PROMETHEUS",
       "fill": 3,
       "gridPos": {
         "h": 6,
@@ -540,7 +540,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "DS_OPENEBS_PROMETHEUS",
       "fill": 3,
       "gridPos": {
         "h": 6,
@@ -632,7 +632,7 @@
       {
         "allValue": null,
         "current": {},
-        "datasource": "Prometheus",
+        "datasource": "DS_OPENEBS_PROMETHEUS",
         "hide": 2,
         "includeAll": false,
         "label": "Pool",
@@ -652,7 +652,7 @@
       {
         "allValue": null,
         "current": {},
-        "datasource": "Prometheus",
+        "datasource": "DS_OPENEBS_PROMETHEUS",
         "hide": 2,
         "includeAll": false,
         "label": "cluster",
@@ -672,7 +672,7 @@
       {
         "allValue": null,
         "current": {},
-        "datasource": "Prometheus",
+        "datasource": "DS_OPENEBS_PROMETHEUS",
         "hide": 2,
         "includeAll": false,
         "label": "spc",

@@ -2,7 +2,7 @@
 	"dashboard": {
 		"__inputs": [
 			{
-				"name": "Prometheus",
+				"name": "DS_OPENEBS_PROMETHEUS",
 				"label": "openebs Prometheus",
 				"description": "",
 				"type": "datasource",
@@ -63,7 +63,7 @@
 					"label": "Others",
 					"threshold": 0
 				},
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fontSize": "80%",
 				"format": "short",
 				"gridPos": {
@@ -111,7 +111,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 9,
@@ -200,7 +200,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"description": "IOPS",
 				"fill": 1,
 				"gridPos": {
@@ -295,7 +295,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 8,
@@ -384,7 +384,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"description": "Throughput",
 				"fill": 1,
 				"gridPos": {
@@ -479,7 +479,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 8,
@@ -568,7 +568,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"description": "Latency",
 				"fill": 1,
 				"gridPos": {
@@ -663,7 +663,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 8,
@@ -752,7 +752,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 8,
@@ -842,7 +842,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 8,
@@ -938,7 +938,7 @@
 					"allValue": null,
 					"current": {
 					},
-					"datasource": "Prometheus",
+					"datasource": "DS_OPENEBS_PROMETHEUS",
 					"hide": 0,
 					"includeAll": false,
 					"label": "Storage class",
@@ -961,7 +961,7 @@
 					"allValue": null,
 					"current": {
 					},
-					"datasource": "Prometheus",
+					"datasource": "DS_OPENEBS_PROMETHEUS",
 					"hide": 2,
 					"includeAll": true,
 					"label": "Volume",
@@ -984,7 +984,7 @@
 					"allValue": null,
 					"current": {
 					},
-					"datasource": "Prometheus",
+					"datasource": "DS_OPENEBS_PROMETHEUS",
 					"hide": 0,
 					"includeAll": true,
 					"label": "OpenEBS pvc",

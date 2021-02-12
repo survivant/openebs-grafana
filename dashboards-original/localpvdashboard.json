@@ -2,7 +2,7 @@
 	"dashboard": {
 		"__inputs": [
 			{
-				"name": "Prometheus",
+				"name": "DS_OPENEBS_PROMETHEUS",
 				"label": "openebs Prometheus",
 				"description": "",
 				"type": "datasource",
@@ -87,7 +87,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 3,
 				"gridPos": {
 					"h": 6,
@@ -182,7 +182,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 3,
 				"gridPos": {
 					"h": 6,
@@ -283,7 +283,7 @@
 					"allValue": null,
 					"current": {
 					},
-					"datasource": "Prometheus",
+					"datasource": "DS_OPENEBS_PROMETHEUS",
 					"hide": 2,
 					"includeAll": false,
 					"label": "cluster",

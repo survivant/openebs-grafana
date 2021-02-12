@@ -2,7 +2,7 @@
 	"dashboard": {
 		"__inputs": [
 			{
-				"name": "Prometheus",
+				"name": "DS_OPENEBS_PROMETHEUS",
 				"label": "openebs Prometheus",
 				"description": "",
 				"type": "datasource",
@@ -88,7 +88,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 7,
@@ -200,7 +200,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 7,
@@ -324,7 +324,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 7,
@@ -420,7 +420,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 8,
@@ -515,7 +515,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 8,
@@ -612,7 +612,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 7,
@@ -715,7 +715,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 7,
@@ -810,7 +810,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 7,
@@ -905,7 +905,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 7,
@@ -1000,7 +1000,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 7,
@@ -1096,7 +1096,7 @@
 				"bars": false,
 				"dashLength": 10,
 				"dashes": false,
-				"datasource": "Prometheus",
+				"datasource": "DS_OPENEBS_PROMETHEUS",
 				"fill": 1,
 				"gridPos": {
 					"h": 7,
@@ -1198,7 +1198,7 @@
 					"allValue": null,
 					"current": {
 					},
-					"datasource": "Prometheus",
+					"datasource": "DS_OPENEBS_PROMETHEUS",
 					"hide": 2,
 					"includeAll": false,
 					"label": "Pool",
@@ -1221,7 +1221,7 @@
 					"allValue": null,
 					"current": {
 					},
-					"datasource": "Prometheus",
+					"datasource": "DS_OPENEBS_PROMETHEUS",
 					"hide": 2,
 					"includeAll": false,
 					"label": "cluster",
@@ -1263,7 +1263,7 @@
 					"allValue": null,
 					"current": {
 					},
-					"datasource": "Prometheus",
+					"datasource": "DS_OPENEBS_PROMETHEUS",
 					"hide": 0,
 					"includeAll": true,
 					"label": "Volume replicas in pool",
@@ -1286,7 +1286,7 @@
 					"allValue": null,
 					"current": {
 					},
-					"datasource": "Prometheus",
+					"datasource": "DS_OPENEBS_PROMETHEUS",
 					"hide": 2,
 					"includeAll": false,
 					"label": "spc",
