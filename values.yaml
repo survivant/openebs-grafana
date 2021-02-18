@@ -1,0 +1,146 @@
+kube-prometheus-stack:
+  enabled: false
+
+grafana:
+  enabled: true
+  service:
+    type: NodePort
+    port: 80
+    targetPort: 3000
+    nodePort: 30006
+
+  ingress:
+    enabled: false
+
+  persistence:
+    type: pvc
+    enabled: true
+    storageClassName: sc-iep-localpv
+    accessModes:
+      - ReadWriteOnce
+    size: 20Gi
+
+  testFramework:
+    enabled: false
+  serviceMonitor:
+    selfMonitor: false
+
+  # Administrator credentials when not using an existing secret (see below)
+  adminUser: admin
+  adminPassword: admin
+
+  sidecar:
+    dashboards:
+      enabled: true
+      # label that the configmaps with dashboards are marked with
+      label: grafana_dashboard
+      # value of label that the configmaps with dashboards are set to
+      labelValue: "1"
+    datasources:
+      enabled: true
+
+  datasources:
+    datasources.yaml:
+      apiVersion: 1
+      datasources:
+        - name: Prometheus
+          type: prometheus
+          url: http://prometheus-server:9090
+          access: proxy
+          isDefault: true
+
+  plugins:
+   - digrich-bubblechart-panel
+   - grafana-clock-panel
+   - grafana-piechart-panel
+   -
+prometheus:
+  nameOverride: "prometheus"
+
+  alertmanager:
+    enabled: true
+
+    ingress:
+      enabled: false
+
+    persistentVolume:
+      enabled: true
+      accessModes:
+        - ReadWriteOnce
+      mountPath: /data
+      size: 2Gi
+      storageClass: sc-iep-localpv
+
+    service:
+      nodePort: 30005
+      type: NodePort
+
+  kubeStateMetrics:
+    enabled: true
+
+  nodeExporter:
+    enabled: true
+
+  server:
+    enabled: true
+    fullnameOverride: "prometheus-server"
+
+    global:
+      ## How frequently to scrape targets by default
+      ##
+      scrape_interval: 30s
+      ## How long until a scrape request times out
+      ##
+      scrape_timeout: 10s
+      ## How frequently to evaluate rules
+      ##
+      evaluation_interval: 45s
+
+    ingress:
+      enabled: false
+
+    persistentVolume:
+      enabled: true
+      accessModes:
+        - ReadWriteOnce
+      mountPath: /data
+      size: 8Gi
+      storageClass: sc-iep-localpv
+
+    service:
+      servicePort: 9090
+      port: 9090
+      nodePort: 30004
+      type: NodePort
+
+  pushgateway:
+    enabled: true
+
+  ## alertmanager ConfigMap entries
+  ##
+  alertmanagerFiles:
+    alertmanager.yml:
+      receivers:
+        - name: default-receiver
+          webhook_configs:
+            - url: "https://webhook.site/22970833-03fd-43d2-8ab2-daf6f87048af"
+
+      route:
+        group_wait: 10s
+        group_interval: 30s
+        receiver: default-receiver
+        repeat_interval: 45s
+
+  serverFiles:
+    alerts:
+      groups:
+        - name: Instances
+          rules:
+            - alert: InstanceDown
+              expr: up == 0
+              for: 10s
+              labels:
+                severity: page
+              annotations:
+                description: '{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 1 minute.'
+                summary: 'Instance {{ $labels.instance }} down'

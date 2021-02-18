@@ -712,7 +712,7 @@
       "refresh": false,
       "schemaVersion": 25,
       "style": "dark",
-      "tags": [],
+      "tags": ["Custom"],
       "templating": {
         "list": [
           {
@@ -824,7 +824,7 @@
         ]
       },
       "timezone": "browser",
-      "title": "XXX",
+      "title": "XXX Kubernetes / Persistent / Volumes",
       "uid": "I_Zw48XZk",
       "version": 1
 }

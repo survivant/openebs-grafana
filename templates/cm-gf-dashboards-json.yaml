@@ -1,5 +1,5 @@
-{{- if .Values.grafana.dashboards.enabled }}
-{{- $files := .Files.Glob "dashboards/*.json" }}
+{{- if .Values.grafana.sidecar.dashboards.enabled }}
+{{- $files := .Files.Glob "dashboards/json/**.json" }}
 {{- if $files }}
 apiVersion: v1
 kind: ConfigMapList
@@ -13,7 +13,7 @@ items:
     namespace: {{ $.Release.Namespace }}
     labels:
       {{- if $.Values.grafana.sidecar.dashboards.label }}
-      {{ $.Values.grafana.sidecar.dashboards.label }}: "1"
+      {{ $.Values.grafana.sidecar.dashboards.label }}: "{{ $.Values.grafana.sidecar.dashboards.labelValue }}"
       {{- end }}
       app: prometheus-grafana
   data:
